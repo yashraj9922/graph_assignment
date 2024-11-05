@@ -1,0 +1,326 @@
+9.1s 1 Requirement already satisfied: scikit-learn in /opt/conda/lib/python3.10/site-packages (1.2.2)
+9.1s 2 Requirement already satisfied: pandas in /opt/conda/lib/python3.10/site-packages (2.2.2)
+9.1s 3 Requirement already satisfied: numpy in /opt/conda/lib/python3.10/site-packages (1.26.4)
+9.1s 4 Requirement already satisfied: torch in /opt/conda/lib/python3.10/site-packages (2.4.0)
+9.1s 5 Requirement already satisfied: scipy>=1.3.2 in /opt/conda/lib/python3.10/site-packages (from scikit-learn) (1.14.1)
+9.1s 6 Requirement already satisfied: joblib>=1.1.1 in /opt/conda/lib/python3.10/site-packages (from scikit-learn) (1.4.2)
+9.1s 7 Requirement already satisfied: threadpoolctl>=2.0.0 in /opt/conda/lib/python3.10/site-packages (from scikit-learn) (3.5.0)
+9.3s 8 Requirement already satisfied: python-dateutil>=2.8.2 in /opt/conda/lib/python3.10/site-packages (from pandas) (2.9.0.post0)
+9.3s 9 Requirement already satisfied: pytz>=2020.1 in /opt/conda/lib/python3.10/site-packages (from pandas) (2024.1)
+9.3s 10 Requirement already satisfied: tzdata>=2022.7 in /opt/conda/lib/python3.10/site-packages (from pandas) (2024.1)
+9.3s 11 Requirement already satisfied: filelock in /opt/conda/lib/python3.10/site-packages (from torch) (3.15.1)
+9.3s 12 Requirement already satisfied: typing-extensions>=4.8.0 in /opt/conda/lib/python3.10/site-packages (from torch) (4.12.2)
+9.3s 13 Requirement already satisfied: sympy in /opt/conda/lib/python3.10/site-packages (from torch) (1.13.3)
+9.3s 14 Requirement already satisfied: networkx in /opt/conda/lib/python3.10/site-packages (from torch) (3.3)
+9.3s 15 Requirement already satisfied: jinja2 in /opt/conda/lib/python3.10/site-packages (from torch) (3.1.4)
+9.3s 16 Requirement already satisfied: fsspec in /opt/conda/lib/python3.10/site-packages (from torch) (2024.6.1)
+9.3s 17 Requirement already satisfied: six>=1.5 in /opt/conda/lib/python3.10/site-packages (from python-dateutil>=2.8.2->pandas) (1.16.0)
+9.5s 18 Requirement already satisfied: MarkupSafe>=2.0 in /opt/conda/lib/python3.10/site-packages (from jinja2->torch) (2.1.5)
+9.6s 19 Requirement already satisfied: mpmath<1.4,>=1.1.0 in /opt/conda/lib/python3.10/site-packages (from sympy->torch) (1.3.0)
+26.8s 20 
+26.8s 21 Initializing dataset...
+37.9s 22 Data shape: (34784488, 2)
+37.9s 23 Index shape: (166076, 4)
+37.9s 24 Index columns: ['tweet_id', 'post_time_day', 'start_ind', 'end_ind']
+37.9s 25 Start index range: 1 to 34784413
+37.9s 26 End index range: 175 to 34784488
+38.6s 27 
+38.6s 28 After normalization:
+38.6s 29 Start index range: 1 to 34784413
+38.6s 30 End index range: 0 to 34784412
+38.6s 31 
+38.6s 32 Preprocessing data...
+39.8s 33 Data preprocessing completed
+39.8s 34 
+39.8s 35 Creating sequences...
+39.8s 36 Processed 1/166076 sequences. Valid: 1, Skipped: 0
+40.5s 37 Processed 1001/166076 sequences. Valid: 1001, Skipped: 0
+41.2s 38 Processed 2001/166076 sequences. Valid: 2001, Skipped: 0
+41.9s 39 Processed 3001/166076 sequences. Valid: 3001, Skipped: 0
+42.6s 40 Processed 4001/166076 sequences. Valid: 4001, Skipped: 0
+43.3s 41 Processed 5001/166076 sequences. Valid: 5001, Skipped: 0
+44.0s 42 Processed 6001/166076 sequences. Valid: 6001, Skipped: 0
+44.6s 43 Processed 7001/166076 sequences. Valid: 7001, Skipped: 0
+45.3s 44 Processed 8001/166076 sequences. Valid: 8001, Skipped: 0
+46.0s 45 Processed 9001/166076 sequences. Valid: 9001, Skipped: 0
+46.8s 46 Processed 10001/166076 sequences. Valid: 10001, Skipped: 0
+47.5s 47 Processed 11001/166076 sequences. Valid: 11001, Skipped: 0
+48.2s 48 Processed 12001/166076 sequences. Valid: 12001, Skipped: 0
+48.9s 49 Processed 13001/166076 sequences. Valid: 13001, Skipped: 0
+49.6s 50 Processed 14001/166076 sequences. Valid: 14001, Skipped: 0
+50.3s 51 Processed 15001/166076 sequences. Valid: 15001, Skipped: 0
+51.0s 52 Processed 16001/166076 sequences. Valid: 16001, Skipped: 0
+51.7s 53 Processed 17001/166076 sequences. Valid: 17001, Skipped: 0
+52.4s 54 Processed 18001/166076 sequences. Valid: 18001, Skipped: 0
+53.1s 55 Processed 19001/166076 sequences. Valid: 19001, Skipped: 0
+53.9s 56 Processed 20001/166076 sequences. Valid: 20001, Skipped: 0
+54.5s 57 Processed 21001/166076 sequences. Valid: 21001, Skipped: 0
+55.2s 58 Processed 22001/166076 sequences. Valid: 22001, Skipped: 0
+55.8s 59 Processed 23001/166076 sequences. Valid: 23001, Skipped: 0
+56.5s 60 Processed 24001/166076 sequences. Valid: 24001, Skipped: 0
+57.2s 61 Processed 25001/166076 sequences. Valid: 25001, Skipped: 0
+57.9s 62 Processed 26001/166076 sequences. Valid: 26001, Skipped: 0
+58.7s 63 Processed 27001/166076 sequences. Valid: 27001, Skipped: 0
+59.3s 64 Processed 28001/166076 sequences. Valid: 28001, Skipped: 0
+60.0s 65 Processed 29001/166076 sequences. Valid: 29001, Skipped: 0
+60.7s 66 Processed 30001/166076 sequences. Valid: 30001, Skipped: 0
+61.4s 67 Processed 31001/166076 sequences. Valid: 31001, Skipped: 0
+62.1s 68 Processed 32001/166076 sequences. Valid: 32001, Skipped: 0
+62.8s 69 Processed 33001/166076 sequences. Valid: 33001, Skipped: 0
+63.5s 70 Processed 34001/166076 sequences. Valid: 34001, Skipped: 0
+64.2s 71 Processed 35001/166076 sequences. Valid: 35001, Skipped: 0
+64.9s 72 Processed 36001/166076 sequences. Valid: 36001, Skipped: 0
+65.6s 73 Processed 37001/166076 sequences. Valid: 37001, Skipped: 0
+66.3s 74 Processed 38001/166076 sequences. Valid: 38001, Skipped: 0
+67.0s 75 Processed 39001/166076 sequences. Valid: 39001, Skipped: 0
+67.7s 76 Processed 40001/166076 sequences. Valid: 40001, Skipped: 0
+68.4s 77 Processed 41001/166076 sequences. Valid: 41001, Skipped: 0
+69.1s 78 Processed 42001/166076 sequences. Valid: 42001, Skipped: 0
+69.8s 79 Processed 43001/166076 sequences. Valid: 43001, Skipped: 0
+70.5s 80 Processed 44001/166076 sequences. Valid: 44001, Skipped: 0
+71.2s 81 Processed 45001/166076 sequences. Valid: 45001, Skipped: 0
+71.9s 82 Processed 46001/166076 sequences. Valid: 46001, Skipped: 0
+72.6s 83 Processed 47001/166076 sequences. Valid: 47001, Skipped: 0
+73.3s 84 Processed 48001/166076 sequences. Valid: 48001, Skipped: 0
+74.0s 85 Processed 49001/166076 sequences. Valid: 49001, Skipped: 0
+74.7s 86 Processed 50001/166076 sequences. Valid: 50001, Skipped: 0
+75.3s 87 Processed 51001/166076 sequences. Valid: 51001, Skipped: 0
+76.0s 88 Processed 52001/166076 sequences. Valid: 52001, Skipped: 0
+76.7s 89 Processed 53001/166076 sequences. Valid: 53001, Skipped: 0
+77.4s 90 Processed 54001/166076 sequences. Valid: 54001, Skipped: 0
+78.1s 91 Processed 55001/166076 sequences. Valid: 55001, Skipped: 0
+78.8s 92 Processed 56001/166076 sequences. Valid: 56001, Skipped: 0
+79.5s 93 Processed 57001/166076 sequences. Valid: 57001, Skipped: 0
+80.2s 94 Processed 58001/166076 sequences. Valid: 58001, Skipped: 0
+80.9s 95 Processed 59001/166076 sequences. Valid: 59001, Skipped: 0
+81.6s 96 Processed 60001/166076 sequences. Valid: 60001, Skipped: 0
+82.3s 97 Processed 61001/166076 sequences. Valid: 61001, Skipped: 0
+82.9s 98 Processed 62001/166076 sequences. Valid: 62001, Skipped: 0
+83.6s 99 Processed 63001/166076 sequences. Valid: 63001, Skipped: 0
+84.3s 100 Processed 64001/166076 sequences. Valid: 64001, Skipped: 0
+85.0s 101 Processed 65001/166076 sequences. Valid: 65001, Skipped: 0
+85.7s 102 Processed 66001/166076 sequences. Valid: 66001, Skipped: 0
+86.3s 103 Processed 67001/166076 sequences. Valid: 67001, Skipped: 0
+87.1s 104 Processed 68001/166076 sequences. Valid: 68001, Skipped: 0
+87.7s 105 Processed 69001/166076 sequences. Valid: 69001, Skipped: 0
+88.4s 106 Processed 70001/166076 sequences. Valid: 70001, Skipped: 0
+89.2s 107 Processed 71001/166076 sequences. Valid: 71001, Skipped: 0
+89.8s 108 Processed 72001/166076 sequences. Valid: 72001, Skipped: 0
+90.5s 109 Processed 73001/166076 sequences. Valid: 73001, Skipped: 0
+91.2s 110 Processed 74001/166076 sequences. Valid: 74001, Skipped: 0
+91.9s 111 Processed 75001/166076 sequences. Valid: 75001, Skipped: 0
+92.6s 112 Processed 76001/166076 sequences. Valid: 76001, Skipped: 0
+93.3s 113 Processed 77001/166076 sequences. Valid: 77001, Skipped: 0
+94.0s 114 Processed 78001/166076 sequences. Valid: 78001, Skipped: 0
+94.6s 115 Processed 79001/166076 sequences. Valid: 79001, Skipped: 0
+95.4s 116 Processed 80001/166076 sequences. Valid: 80001, Skipped: 0
+96.0s 117 Processed 81001/166076 sequences. Valid: 81001, Skipped: 0
+96.8s 118 Processed 82001/166076 sequences. Valid: 82001, Skipped: 0
+97.5s 119 Processed 83001/166076 sequences. Valid: 83001, Skipped: 0
+98.2s 120 Processed 84001/166076 sequences. Valid: 84001, Skipped: 0
+98.9s 121 Processed 85001/166076 sequences. Valid: 85001, Skipped: 0
+99.6s 122 Processed 86001/166076 sequences. Valid: 86001, Skipped: 0
+100.3s 123 Processed 87001/166076 sequences. Valid: 87001, Skipped: 0
+101.0s 124 Processed 88001/166076 sequences. Valid: 88001, Skipped: 0
+101.7s 125 Processed 89001/166076 sequences. Valid: 89001, Skipped: 0
+102.4s 126 Processed 90001/166076 sequences. Valid: 90001, Skipped: 0
+103.0s 127 Processed 91001/166076 sequences. Valid: 91001, Skipped: 0
+103.7s 128 Processed 92001/166076 sequences. Valid: 92001, Skipped: 0
+104.4s 129 Processed 93001/166076 sequences. Valid: 93001, Skipped: 0
+105.1s 130 Processed 94001/166076 sequences. Valid: 94001, Skipped: 0
+105.8s 131 Processed 95001/166076 sequences. Valid: 95001, Skipped: 0
+106.5s 132 Processed 96001/166076 sequences. Valid: 96001, Skipped: 0
+107.2s 133 Processed 97001/166076 sequences. Valid: 97001, Skipped: 0
+107.8s 134 Processed 98001/166076 sequences. Valid: 98001, Skipped: 0
+108.5s 135 Processed 99001/166076 sequences. Valid: 99001, Skipped: 0
+109.2s 136 Processed 100001/166076 sequences. Valid: 100001, Skipped: 0
+109.9s 137 Processed 101001/166076 sequences. Valid: 101001, Skipped: 0
+110.6s 138 Processed 102001/166076 sequences. Valid: 102001, Skipped: 0
+111.3s 139 Processed 103001/166076 sequences. Valid: 103001, Skipped: 0
+112.0s 140 Processed 104001/166076 sequences. Valid: 104001, Skipped: 0
+112.7s 141 Processed 105001/166076 sequences. Valid: 105001, Skipped: 0
+113.5s 142 Processed 106001/166076 sequences. Valid: 106001, Skipped: 0
+114.0s 143 Processed 107001/166076 sequences. Valid: 107001, Skipped: 0
+114.8s 144 Processed 108001/166076 sequences. Valid: 108001, Skipped: 0
+115.4s 145 Processed 109001/166076 sequences. Valid: 109001, Skipped: 0
+116.1s 146 Processed 110001/166076 sequences. Valid: 110001, Skipped: 0
+116.8s 147 Processed 111001/166076 sequences. Valid: 111001, Skipped: 0
+117.5s 148 Processed 112001/166076 sequences. Valid: 112001, Skipped: 0
+118.2s 149 Processed 113001/166076 sequences. Valid: 113001, Skipped: 0
+118.9s 150 Processed 114001/166076 sequences. Valid: 114001, Skipped: 0
+119.6s 151 Processed 115001/166076 sequences. Valid: 115001, Skipped: 0
+120.3s 152 Processed 116001/166076 sequences. Valid: 116001, Skipped: 0
+121.0s 153 Processed 117001/166076 sequences. Valid: 117001, Skipped: 0
+121.7s 154 Processed 118001/166076 sequences. Valid: 118001, Skipped: 0
+122.4s 155 Processed 119001/166076 sequences. Valid: 119001, Skipped: 0
+123.0s 156 Processed 120001/166076 sequences. Valid: 120001, Skipped: 0
+123.7s 157 Processed 121001/166076 sequences. Valid: 121001, Skipped: 0
+124.4s 158 Processed 122001/166076 sequences. Valid: 122001, Skipped: 0
+125.1s 159 Processed 123001/166076 sequences. Valid: 123001, Skipped: 0
+125.8s 160 Processed 124001/166076 sequences. Valid: 124001, Skipped: 0
+126.5s 161 Processed 125001/166076 sequences. Valid: 125001, Skipped: 0
+127.1s 162 Processed 126001/166076 sequences. Valid: 126001, Skipped: 0
+127.8s 163 Processed 127001/166076 sequences. Valid: 127001, Skipped: 0
+128.5s 164 Processed 128001/166076 sequences. Valid: 128001, Skipped: 0
+129.3s 165 Processed 129001/166076 sequences. Valid: 129001, Skipped: 0
+130.1s 166 Processed 130001/166076 sequences. Valid: 130001, Skipped: 0
+130.7s 167 Processed 131001/166076 sequences. Valid: 131001, Skipped: 0
+131.4s 168 Processed 132001/166076 sequences. Valid: 132001, Skipped: 0
+132.1s 169 Processed 133001/166076 sequences. Valid: 133001, Skipped: 0
+132.8s 170 Processed 134001/166076 sequences. Valid: 134001, Skipped: 0
+133.4s 171 Processed 135001/166076 sequences. Valid: 135001, Skipped: 0
+134.1s 172 Processed 136001/166076 sequences. Valid: 136001, Skipped: 0
+134.8s 173 Processed 137001/166076 sequences. Valid: 137001, Skipped: 0
+135.5s 174 Processed 138001/166076 sequences. Valid: 138001, Skipped: 0
+136.2s 175 Processed 139001/166076 sequences. Valid: 139001, Skipped: 0
+136.8s 176 Processed 140001/166076 sequences. Valid: 140001, Skipped: 0
+137.5s 177 Processed 141001/166076 sequences. Valid: 141001, Skipped: 0
+138.2s 178 Processed 142001/166076 sequences. Valid: 142001, Skipped: 0
+138.9s 179 Processed 143001/166076 sequences. Valid: 143001, Skipped: 0
+139.6s 180 Processed 144001/166076 sequences. Valid: 144001, Skipped: 0
+140.3s 181 Processed 145001/166076 sequences. Valid: 145001, Skipped: 0
+141.0s 182 Processed 146001/166076 sequences. Valid: 146001, Skipped: 0
+141.7s 183 Processed 147001/166076 sequences. Valid: 147001, Skipped: 0
+142.4s 184 Processed 148001/166076 sequences. Valid: 148001, Skipped: 0
+143.0s 185 Processed 149001/166076 sequences. Valid: 149001, Skipped: 0
+143.7s 186 Processed 150001/166076 sequences. Valid: 150001, Skipped: 0
+144.5s 187 Processed 151001/166076 sequences. Valid: 151001, Skipped: 0
+145.1s 188 Processed 152001/166076 sequences. Valid: 152001, Skipped: 0
+145.8s 189 Processed 153001/166076 sequences. Valid: 153001, Skipped: 0
+146.5s 190 Processed 154001/166076 sequences. Valid: 154001, Skipped: 0
+147.2s 191 Processed 155001/166076 sequences. Valid: 155001, Skipped: 0
+147.9s 192 Processed 156001/166076 sequences. Valid: 156001, Skipped: 0
+148.6s 193 Processed 157001/166076 sequences. Valid: 157001, Skipped: 0
+149.2s 194 Processed 158001/166076 sequences. Valid: 158001, Skipped: 0
+149.9s 195 Processed 159001/166076 sequences. Valid: 159001, Skipped: 0
+150.6s 196 Processed 160001/166076 sequences. Valid: 160001, Skipped: 0
+151.3s 197 Processed 161001/166076 sequences. Valid: 161001, Skipped: 0
+152.0s 198 Processed 162001/166076 sequences. Valid: 162001, Skipped: 0
+152.7s 199 Processed 163001/166076 sequences. Valid: 163001, Skipped: 0
+153.4s 200 Processed 164001/166076 sequences. Valid: 164001, Skipped: 0
+154.0s 201 Processed 165001/166076 sequences. Valid: 165001, Skipped: 0
+154.7s 202 Processed 166001/166076 sequences. Valid: 166001, Skipped: 0
+155.2s 203 
+155.2s 204 Sequence creation completed:
+155.2s 205 Total sequences processed: 166076
+155.2s 206 Valid sequences: 166076
+155.2s 207 Skipped sequences: 0
+155.2s 208 
+155.2s 209 Created 166076 valid sequences
+155.2s 210 
+155.2s 211 Dataset split:
+155.2s 212 Total sequences: 166076
+155.2s 213 Training sequences: 132860
+155.2s 214 Validation sequences: 33216
+155.2s 215 
+155.2s 216 Initializing models...
+155.2s 217 
+155.2s 218 Using device: cuda
+155.2s 219 
+155.2s 220 Training TiDeH...
+204.4s 221 Epoch 1/50:
+204.4s 222 Train Loss: 9106808120.0453, Val Loss: 162761.0518
+251.2s 223 Epoch 2/50:
+251.2s 224 Train Loss: 9106781572.3334, Val Loss: 161406.2051
+298.1s 225 Epoch 3/50:
+298.1s 226 Train Loss: 9106775002.9047, Val Loss: 161668.7454
+344.8s 227 Epoch 4/50:
+344.8s 228 Train Loss: 9106737417.7569, Val Loss: 163358.9335
+391.7s 229 Epoch 5/50:
+391.7s 230 Train Loss: 9106814095.4001, Val Loss: 160610.4784
+438.7s 231 Epoch 6/50:
+438.7s 232 Train Loss: 9106743323.3107, Val Loss: 161870.1493
+485.7s 233 Epoch 7/50:
+485.7s 234 Train Loss: 9106760471.8113, Val Loss: 160781.7090
+532.5s 235 Epoch 8/50:
+532.5s 236 Train Loss: 9106686629.0746, Val Loss: 161267.7674
+579.4s 237 Epoch 9/50:
+579.4s 238 Train Loss: 9106737280.1935, Val Loss: 160579.8182
+626.3s 239 Epoch 10/50:
+626.3s 240 Train Loss: 9106772461.3941, Val Loss: 161208.3491
+673.2s 241 Epoch 11/50:
+673.2s 242 Train Loss: 9106766521.7456, Val Loss: 160397.2449
+720.1s 243 Epoch 12/50:
+720.1s 244 Train Loss: 9106768428.5189, Val Loss: 160335.3868
+767.4s 245 Epoch 13/50:
+767.4s 246 Train Loss: 9106774569.6233, Val Loss: 160832.2819
+814.4s 247 Epoch 14/50:
+814.4s 248 Train Loss: 9106774650.2080, Val Loss: 161288.3240
+862.1s 249 Epoch 15/50:
+862.1s 250 Train Loss: 9106784501.8732, Val Loss: 160886.5219
+909.0s 251 Epoch 16/50:
+909.0s 252 Train Loss: 9106753267.4894, Val Loss: 160326.6096
+955.7s 253 Epoch 17/50:
+955.7s 254 Train Loss: 9106753148.9343, Val Loss: 161327.5693
+1002.5s 255 Epoch 18/50:
+1002.5s 256 Train Loss: 9106789637.9938, Val Loss: 161442.4530
+1049.3s 257 Epoch 19/50:
+1049.3s 258 Train Loss: 9106776379.2978, Val Loss: 161119.8756
+1096.0s 259 Epoch 20/50:
+1096.0s 260 Train Loss: 9106793332.3637, Val Loss: 160878.8239
+1142.7s 261 Epoch 21/50:
+1142.7s 262 Train Loss: 9106723689.7235, Val Loss: 160608.1903
+1189.3s 263 Epoch 22/50:
+1189.3s 264 Train Loss: 9106770133.4402, Val Loss: 160823.2012
+1236.5s 265 Epoch 23/50:
+1236.5s 266 Train Loss: 9106725627.0268, Val Loss: 160465.1103
+1283.2s 267 Epoch 24/50:
+1283.2s 268 Train Loss: 9106791284.3190, Val Loss: 160782.9340
+1329.6s 269 Epoch 25/50:
+1329.6s 270 Train Loss: 9106698190.4773, Val Loss: 160524.3176
+1376.3s 271 Epoch 26/50:
+1376.3s 272 Train Loss: 9106763808.3207, Val Loss: 160653.2187
+1423.1s 273 Epoch 27/50:
+1423.1s 274 Train Loss: 9106787082.5214, Val Loss: 160354.4622
+1470.1s 275 Epoch 28/50:
+1470.1s 276 Train Loss: 9106742564.3695, Val Loss: 160565.8282
+1516.9s 277 Epoch 29/50:
+1516.9s 278 Train Loss: 9106769823.8873, Val Loss: 160727.1720
+1563.7s 279 Epoch 30/50:
+1563.7s 280 Train Loss: 9106781950.8288, Val Loss: 160351.0061
+1610.2s 281 Epoch 31/50:
+1610.2s 282 Train Loss: 9106707084.6936, Val Loss: 160458.5897
+1656.7s 283 Epoch 32/50:
+1656.7s 284 Train Loss: 9106759701.4405, Val Loss: 160242.8459
+1703.4s 285 Epoch 33/50:
+1703.4s 286 Train Loss: 9106780024.6011, Val Loss: 160519.6950
+1750.1s 287 Epoch 34/50:
+1750.1s 288 Train Loss: 9106771844.2392, Val Loss: 160429.3326
+1797.0s 289 Epoch 35/50:
+1797.0s 290 Train Loss: 9106759739.9621, Val Loss: 160616.9006
+1843.7s 291 Epoch 36/50:
+1843.7s 292 Train Loss: 9106767795.8951, Val Loss: 160367.8456
+1890.5s 293 Epoch 37/50:
+1890.5s 294 Train Loss: 9106740601.3141, Val Loss: 160694.1558
+1937.4s 295 Epoch 38/50:
+1937.4s 296 Train Loss: 9106779961.3120, Val Loss: 160385.3926
+1983.8s 297 Epoch 39/50:
+1983.8s 298 Train Loss: 9106713223.1414, Val Loss: 160607.4399
+2030.8s 299 Epoch 40/50:
+2030.8s 300 Train Loss: 9106761787.6408, Val Loss: 160738.0500
+2077.5s 301 Epoch 41/50:
+2077.5s 302 Train Loss: 9106771958.0657, Val Loss: 160505.2670
+2124.3s 303 Epoch 42/50:
+2124.3s 304 Train Loss: 9106725319.5998, Val Loss: 160577.5869
+2170.9s 305 Epoch 43/50:
+2170.9s 306 Train Loss: 9106776084.8582, Val Loss: 160445.3266
+2217.5s 307 Epoch 44/50:
+2217.5s 308 Train Loss: 9106757802.1654, Val Loss: 160430.2848
+2264.0s 309 Epoch 45/50:
+2264.0s 310 Train Loss: 9106783814.7288, Val Loss: 160558.9307
+2310.1s 311 Epoch 46/50:
+2310.1s 312 Train Loss: 9106752776.0749, Val Loss: 160469.4549
+2356.2s 313 Epoch 47/50:
+2356.2s 314 Train Loss: 9106759901.5970, Val Loss: 160606.4102
+2402.1s 315 Epoch 48/50:
+2402.1s 316 Train Loss: 9106687828.5737, Val Loss: 160479.4187
+2448.5s 317 Epoch 49/50:
+2448.5s 318 Train Loss: 9106701079.8125, Val Loss: 160733.3360
+2494.4s 319 Epoch 50/50:
+2494.4s 320 Train Loss: 9106775951.9247, Val Loss: 160761.4386
+2494.4s 321 
+2494.4s 322 Training completed for all models!
+2498.3s 323 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+2498.8s 324 [NbConvertApp] Writing 51241 bytes to __notebook__.ipynb
+2500.5s 325 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+2501.7s 326 [NbConvertApp] Writing 380383 bytes to __results__.html
